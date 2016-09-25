@@ -1,0 +1,119 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 65px;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+    position: fixed;
+    /*background: $kenyan-copper;*/
+    background: #6F1A07;
+    /*height: $header-height;*/
+    height: 60px;
+    width: 100%;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    /*box-shadow: 0 2px 2px $kenyan-copper;*/
+    box-shadow: 0 2px 2px #6F1A07;
+    z-index: 100;
+
+}
+
+/*navbar links*/
+.navbar-default .navbar-nav>li>a {
+  color: #ECF0F1;
+  font-size: 20px;
+}
+
+/*navbar brand*/
+.navbar-default .navbar-brand {
+  color: #ECF0F1;
+  font-size: 24px;
+  /*color: #F7F3E3;*/
+}
+
+/*navbar*/
+.navbar-default {
+  background-color: #6F1A07;
+  border-color: #6F1A07;
+  border-radius: 0px;
+}
+
+#help {
+  color: #F2BB05;
+}
+
+#nav {
+  margin-top: 5px;
+}
+.top-margin {
+  margin-top: 50px;
+}
+
+.bottom-margin {
+  margin-bottom: 50px;
+}
+
+.title-section {
+  text-align: center;
+  background-color: #ECF0F1;
+  /*border: black 1px solid;*/
+  color: #6F1A07;
+
+}
+
+.title-section img {
+  border-radius: 30px;
+}
+
+.title-section h1 {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.title-section hr {
+  border-top: 1px solid #6F1A07;
+  width: 85%;
+}
+
+.intro-section {
+  background-color: #B8C4BB;
+}
+
+.intro-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro-section .crest {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.intro-section .team {
+  width: 100%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.intro-section p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.nav-hide {
+  /*top: -$header-height; // same as header height. use variables in LESS/SASS*/
+  top: -60px; // same as header height. use variables in LESS/SASS
+}
+
+/* Delay browser until page loads */
+.load_delay {
+    opacity:0;
+}
+
+/* Indicator element to detect mobile devices */
+#mobile-flag {
+    display: none;
+}
