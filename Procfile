@@ -1,1 +1,1 @@
-web: gunicorn operationsanta.wsgi
+web: gunicorn operation_santa.wsgi
