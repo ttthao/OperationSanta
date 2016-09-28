@@ -148,7 +148,8 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'operation_santa'
+    'operation_santa',
+    'gunicorn'
 )
 
 LANGUAGES = (
