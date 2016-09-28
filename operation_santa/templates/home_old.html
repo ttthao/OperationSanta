@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+  <header class="nav-show">
+    <!-- <nav>
+      <ul>
+        <li>Home</li>
+        <li></li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-default">
+      <div id="nav" class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Operation Santa</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <ul id="help" class="nav navbar-nav navbar-right">
+            <li><a href="#">Nominate</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav >
+
+  </header>
+
+
+  <!-- Emblem and Title -->
+  <section id="title" class="title-section">
+    <!-- content -->
+    <div class="container">
+      <div class="row top-margin bottom-margin">
+
+        <!-- Emblem -->
+        <div class="col-lg-offset-2 col-lg-3">
+          <img src="/media/santa.jpg" alt="" class="img-responsive">
+        </div> <!-- /Emblem -->
+
+        <!-- Title -->
+        <div class="col-lg-6 top-margin">
+          <h1>Operation Santa</h1>
+          <hr>
+          <h4>Presented by Alpha Phi Omega at UCSD</h4>
+        </div> <!-- /Title -->
+
+      </div> <!-- /content -->
+    </div> <!-- /content -->
+  </section>
+
+  <!-- Introduction -->
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="row top-margin bottom-margin">
+
+        <h1>What is Operation Santa?</h1>
+        <hr>
+        <div class="row top-margin bottom-margin">
+          <!-- Emblem -->
+          <div class="col-lg-3">
+            <img src="/media/crest.gif" alt="" class="crest img-responsive">
+            <p>
+              Operation Santa is an annual relief program in San Diego initiated by Alpha Phi Omega at UCSD (Rho Pi Chapter) to provide a Christmas to families in San Diego that cannot afford gifts for their children.
+            </p>
+          </div>
+
+          <div class="col-lg-3">
+            <img src="/media/2015.jpg" alt="" class="team img-responsive">
+            <p>
+              Our goal is to help out as many kids and families as possible experience a true Christmas by bringing gifts and food!
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Since we recently have been receiving an overwhelming number of requests from families for help, we solicit assistance from other groups at UCSD and the San Diego community to adopt families who we were unable to fund.
+        </p>
+        <p>
+          Thus, the delivery to some of the nominated families will be carried out by non-APO members.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vestibulum mi, a eleifend erat. Cras non commodo dolor. Vivamus a sem vitae est mollis dictum a vel mauris. Nulla vitae massa finibus, vulputate sapien eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In quis suscipit mi. In sed tellus nec lacus gravida sollicitudin. Sed quis sapien vitae ante suscipit varius. Donec nec ultrices odio. Fusce nisl ante, tristique sed sem et, rhoncus feugiat lorem. Donec eleifend pharetra gravida. Duis mauris ante, egestas vel hendrerit ac, suscipit ut mi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vestibulum mi, a eleifend erat. Cras non commodo dolor. Vivamus a sem vitae est mollis dictum a vel mauris. Nulla vitae massa finibus, vulputate sapien eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In quis suscipit mi. In sed tellus nec lacus gravida sollicitudin. Sed quis sapien vitae ante suscipit varius. Donec nec ultrices odio. Fusce nisl ante, tristique sed sem et, rhoncus feugiat lorem. Donec eleifend pharetra gravida. Duis mauris ante, egestas vel hendrerit ac, suscipit ut mi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vestibulum mi, a eleifend erat. Cras non commodo dolor. Vivamus a sem vitae est mollis dictum a vel mauris. Nulla vitae massa finibus, vulputate sapien eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In quis suscipit mi. In sed tellus nec lacus gravida sollicitudin. Sed quis sapien vitae ante suscipit varius. Donec nec ultrices odio. Fusce nisl ante, tristique sed sem et, rhoncus feugiat lorem. Donec eleifend pharetra gravida. Duis mauris ante, egestas vel hendrerit ac, suscipit ut mi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vestibulum mi, a eleifend erat. Cras non commodo dolor. Vivamus a sem vitae est mollis dictum a vel mauris. Nulla vitae massa finibus, vulputate sapien eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In quis suscipit mi. In sed tellus nec lacus gravida sollicitudin. Sed quis sapien vitae ante suscipit varius. Donec nec ultrices odio. Fusce nisl ante, tristique sed sem et, rhoncus feugiat lorem. Donec eleifend pharetra gravida. Duis mauris ante, egestas vel hendrerit ac, suscipit ut mi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vestibulum mi, a eleifend erat. Cras non commodo dolor. Vivamus a sem vitae est mollis dictum a vel mauris. Nulla vitae massa finibus, vulputate sapien eu, ornare massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In quis suscipit mi. In sed tellus nec lacus gravida sollicitudin. Sed quis sapien vitae ante suscipit varius. Donec nec ultrices odio. Fusce nisl ante, tristique sed sem et, rhoncus feugiat lorem. Donec eleifend pharetra gravida. Duis mauris ante, egestas vel hendrerit ac, suscipit ut mi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {% endblock content %}

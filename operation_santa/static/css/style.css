@@ -2,42 +2,87 @@ body {
   font-family: 'Raleway', sans-serif;
   padding-top: 65px;
   width: 100%;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
 header {
     position: fixed;
-    /*background: $kenyan-copper;*/
-    background: #6F1A07;
+
+    /*kenyan-copper*/
+    background-color: #6F1A07;
+
+    /*green*/
+    /*background-color: #1A936F;*/
+
+    /*color?*/
+    /*background-color: #357266;*/
+
     /*height: $header-height;*/
     height: 60px;
     width: 100%;
     top: 0;
     transition: top 0.2s ease-in-out;
-    /*box-shadow: 0 2px 2px $kenyan-copper;*/
+
+    /*kenyan-copper*/
     box-shadow: 0 2px 2px #6F1A07;
+
+    /*box-shadow: 0 2px 2px $kenyan-copper;*/
+    /*box-shadow: 0 2px 2px #1A936F;*/
+    /*box-shadow: 0 2px 2px #357266;*/
+
     z-index: 100;
 
 }
 
 /*navbar links*/
 .navbar-default .navbar-nav>li>a {
+  /*eggshell*/
   color: #ECF0F1;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 /*navbar brand*/
 .navbar-default .navbar-brand {
+  /*eggshell*/
   color: #ECF0F1;
-  font-size: 24px;
   /*color: #F7F3E3;*/
+
+  font-size: 24px;
 }
 
 /*navbar*/
 .navbar-default {
+  /*green*/
+  /*background-color: #1A936F;*/
+  /*border-color: #1A936F;*/
+
+  /*kenyan-copper*/
   background-color: #6F1A07;
   border-color: #6F1A07;
+
+  /*background-color: #357266;*/
+  /*border-color: #357266;*/
   border-radius: 0px;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
 }
 
 #help {
@@ -55,52 +100,48 @@ header {
   margin-bottom: 50px;
 }
 
-.title-section {
-  text-align: center;
-  background-color: #ECF0F1;
-  /*border: black 1px solid;*/
-  color: #6F1A07;
-
-}
-
-.title-section img {
-  border-radius: 30px;
-}
-
-.title-section h1 {
-  font-size: 72px;
-  font-weight: 600;
-}
-
-.title-section hr {
-  border-top: 1px solid #6F1A07;
-  width: 85%;
-}
-
 .intro-section {
-  background-color: #B8C4BB;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    /*floral-white*/
+    background: #FFF8F0;
 }
 
-.intro-section h1 {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+
+    /*kenyan-copper*/
+    background-color: #6F1A07;
 }
 
-.intro-section .crest {
-  width: 75%;
-  margin: 0 auto;
+.how-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+
+    /*floral-white*/
+    background: #FFF8F0;
 }
 
-.intro-section .team {
-  width: 100%;
-  border-radius: 30px;
-  margin: 0 auto;
+.event-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+
+    /*kenyan-copper*/
+    background-color: #6F1A07;
 }
 
-.intro-section p {
-  font-size: 32px;
-  font-weight: 600;
+.contact-section {
+    height: 50%;
+    padding-top: 150px;
+    text-align: center;
+
+    /*floral-white*/
+    background: #FFF8F0;
 }
 
 .nav-hide {
