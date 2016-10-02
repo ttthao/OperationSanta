@@ -4,71 +4,125 @@
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
-<header class="nav-show">
-  <nav class="navbar navbar-default">
-    <div id="nav" class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Operation Santa</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul id="help" class="nav navbar-nav navbar-right">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Get Involved</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Recognitions</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
-</header>
-
-<!-- snow -->
-<div id="snowflakeContainer">
-    <p class="snowflake">*</p>
-</div>
-
 <!-- Intro Section -->
 <section id="intro" class="intro-section">
-  <div class="container">
+  <div class="container=fluid">
     <div class="row">
       <div class="col-lg-12">
-        <h1>Intro</h1>
+        <div class='bg'>
+          <img src="/media/intro.jpg" alt="" class="img-responsive">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="about-section">
+  <section id="about" class="about-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1>About Section</h1>
+
+      <div class="col-lg-6">
+        <h1><span class="red">Our</span> <span class="green">Mission</span></h1>
+        <div class='crest'>
+          <img src="/media/crest.gif" alt="" class="img-responsive">
+        </div>
+        <!-- apo desc -->
+        {% placeholder "apo description text" %}
+
+        <!-- opsanta desc -->
+        {% placeholder "opsanta description text" %}
+
+        <!-- about button -->
+        <button type="button" class="btn btn-outline-primary">Learn More</button>
+      </div> <!-- apo desc -->
+
+      <!-- image carousel -->
+      <div class="col-lg-6 slideshow">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="/media/opsanta_2012.jpg" alt="First slide">
+            </div>
+
+            <div class="item">
+              <img src="/media/delivery_2014.jpg" alt="Second slide">
+            </div>
+
+            <div class="item">
+              <img src="/media/opsanta_2015.jpg" alt="Third slide">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
+      </div> <!-- image carousel -->
+
+    </div> <!-- row -- >
+  </div> <!-- container -->
 </section>
 
 <!-- How Section -->
 <section id="how" class="how-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1>How Section</h1>
+
+
+      <div class="col-lg-6 involve">
+        <!-- nominate -->
+        <div class="nominate">
+          <h1><span class="gold">Nominate</span></h1>
+          {% placeholder "nomination text" %}
+          <div class="center-button">
+            <button type="button" class="btn btn-outline-primary"><a href="https://goo.gl/forms/lwhFAdAspMBEdVzl1">Nominate</a></button>
+          </div>
+        </div>
+
+        <!-- adopt -->
+        <div class="adopt">
+          <h1><span class="gold">Adopt</span></h1>
+          {% placeholder "adopt text" %}
+          <div class="center-button">
+            <button type="button" class="btn btn-outline-primary"><a href="https://goo.gl/forms/Y7QTrbB5to5IaVr33">Adopt</a></button>
+          </div>
+        </div>
+
+        <!-- donate -->
+        <div class="donate">
+          <h1><span class="gold">Donate</span></h1>
+          {% placeholder "donate text" %}
+          <div class="center-button">
+              <button type="button" class="btn btn-outline-primary">Donate</button>
+          </div>
+        </div>
+
       </div>
+
+      <div class="col-lg-6 prompt">
+        <h1><span class="red">Getting</span> <span class="green">Involved</span></h1>
+        {% placeholder "involve text" %}
+        <img src="/media/opsanta_profile_pic.jpg" alt="" class="img-responsive">
+      </div>
+
+
     </div>
   </div>
 </section>
@@ -76,10 +130,31 @@
 <!-- Events Section -->
 <section id="event" class="event-section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Event Section</h1>
+    <div class="row ">
+      <h1><span class="red">Our</span><span class="green"> Events</span></h1>
+    </div>
+    <div class="row events">
+      <!-- event 1 -->
+      <div class="col-lg-4">
+        <h1>Rush Service</h1>
+        <img src="/media/gift_tags.jpg" alt="" class="img-responsive">
+        {% placeholder "rush service text" %}
       </div>
+
+      <!-- event 2 -->
+      <div class="col-lg-4">
+        <h1>Chipotle Fundraiser</h1>
+        <img src="/media/chipotle.png" alt="" class="img-responsive">
+        {% placeholder "chipotle desc text" %}
+      </div>
+
+      <!-- event 3 -->
+      <div class="col-lg-4">
+        <h1>Gift-wrapping</h1>
+        <img src="/media/gift_wrapping.jpg" alt="" class="img-responsive">
+        {% placeholder "gift wrap desc text" %}
+      </div>
+
     </div>
   </div>
 </section>
@@ -90,6 +165,12 @@
     <div class="row">
       <div class="col-lg-12">
         <h1>Contact Section</h1>
+          <form method="POST" action="http://formspree.io/apo.operationsanta@gmail.com">
+            <input type="email" name="email" placeholder="Your email">
+            <input type="phone" name="phone" placeholder="Your phone number">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
       </div>
     </div>
   </div>

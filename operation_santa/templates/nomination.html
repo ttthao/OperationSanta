@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+<!-- Nomination Section -->
+<section id="nomination" class="nomination-section">
+  <div class="container">
+    <div class="row">
+      <h1>Nominate A Family</h1>
+      <div id="google-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJ0GlAsqN8Hc3U3P-c6hw_wwNO-mwSmZVQy1B38zat5UoT5A/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

@@ -3,6 +3,13 @@ by Tommy Truong, AX
 
 ## Last Changes:
 
+#### Wednesday, 09/28/2016
+Scrapped 1st design. Home layout drafted, need to go over with Joyce.
+Bootstrap docs sidebar will be added to the right.
+Smooth scroll will be everywhere.
+Adoption/nomination/donation will be embedded.
+Hosted on Heroku at https://operationsanta.herokuapp.com/en/
+
 #### Monday, 09/12/2016
 Base template created. About Us and FAQ are static, not much needed for templating.
 Special Thanks can have an alternating dynamic design, where each new entry have
