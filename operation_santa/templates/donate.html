@@ -20,6 +20,7 @@
     <div class="row">
       <div class="col-lg-6">
         <h1>Paypal</h1>
+          {% placeholder paypal_text %}
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input name="cmd" value="_s-xclick" type="hidden">
             <input name="hosted_button_id" value="T4TFFRSK3CWQA" type="hidden">
@@ -32,18 +33,20 @@
 
       <div class="col-lg-6">
         <h1>Check</h1>
-          <p>We accept donations through check or money order!</p>
-          <p>Please make it out to "Alpha Phi Omega-Rho Pi Chapter" and mail it to:</p>
-          <p>Alpha Phi Omega, ATTN: Operation Santa</p>
-          <p>University of California, San Diego</p>
-          <p>9500 Gilman Drive</p>
-          <p>La Jolla, CA 92093</p>
+          {% placeholder money_order_text %}
+          <!-- <p>We accept donations through check or money order!</p> -->
+          <!-- <p>Please make it out to "Alpha Phi Omega-Rho Pi Chapter" and mail it to:</p> -->
+          <!-- <p>Alpha Phi Omega, ATTN: Operation Santa</p> -->
+          <!-- <p>University of California, San Diego</p> -->
+          <!-- <p>9500 Gilman Drive</p> -->
+          <!-- <p>La Jolla, CA 92093</p> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-12 ">
         <h1>Non-monetary Donation</h1>
+          {% placeholder non-monetary_text %}
           <a href="https://goo.gl/forms/0e0oM8nQqDgkrXOD2" type="button" class="btn btn-outline-primary">Mail-In / Drop Off</a>
       </div>
     </div>
