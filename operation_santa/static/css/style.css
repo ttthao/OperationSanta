@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/*navbar*/
 header {
     position: fixed;
     background-color: #FFF;
@@ -18,14 +19,17 @@ header {
   border-bottom: 1px solid #e1e1e4;
 }
 
+/*font color */
 .red {
   color: #8E0000;
 }
 
+/*font color */
 .green {
   color: #0B6E4F;
 }
 
+/*font color */
 .gold {
   color: #FA9F42;
 }
@@ -84,7 +88,8 @@ section {
     font-size: 14px;
     line-height: 24px;
     position: fixed;
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
+    color: #A0ACAD;
     user-select: none;
     z-index: 1000;
 }
@@ -108,9 +113,17 @@ section {
 .intro-section {
     height: 100%;
     /*text-align: center;*/
-    background: #FFF;
+    /*background: #FFF;*/
+    /*background: #0B6E4F;*/
+    background-image: url(/media/blurry_xmas.png);
+    background-repeat: no-repeat;
+    background-size: cover;;
+    background-position: cover;
 }
 
+.bg-imag {
+  position: relative;
+}
 .bg {
   width: 100%;
 }
@@ -212,6 +225,27 @@ section {
 
     /*floral-white*/
     background: #FFF8F0;
+}
+
+.donate-section {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #f5f5f9;
+    /*eggshell*/
+}
+
+.donate-section .prompt>h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.donate-section .prompt>img {
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #google-form {

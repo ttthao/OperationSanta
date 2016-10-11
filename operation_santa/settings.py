@@ -180,7 +180,8 @@ CMS_TEMPLATES = (
     ('page.html', 'Page'),
     ('feature.html', 'Page with Feature'),
     ('home.html', 'Home'),
-    ('nomination.html', 'Nomination')
+    ('nomination.html', 'Nomination'),
+    ('donate.html', 'Donation')
 
 )
 
