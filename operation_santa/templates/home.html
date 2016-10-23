@@ -113,7 +113,7 @@
           <h1><span class="gold">Donate</span></h1>
           {% placeholder "donate text" %}
           <div class="center-button">
-              <button type="button" class="btn btn-outline-primary">Donate</button>
+            <a href="/donate" type="button" class="btn btn-outline-primary">Donate</a>
           </div>
         </div>
 
@@ -166,14 +166,21 @@
 <section id="contact" class="contact-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1>Contact Section</h1>
+      <h1>Contact Section</h1>
+      <div class="col-lg-6">
+        <div>
           <form method="POST" action="http://formspree.io/apo.operationsanta@gmail.com">
-            <input type="email" name="email" placeholder="Your email">
-            <input type="phone" name="phone" placeholder="Your phone number">
-            <textarea name="message" placeholder="Your message"></textarea>
-            <button type="submit">Send</button>
+            <div><input type="email" name="email" placeholder="Your email"></div>
+            <div><input type="phone" name="phone" placeholder="Your phone number"></div>
+            <div><textarea name="message" placeholder="Your message"></textarea></div>
+            <div><button type="submit">Send</button></div>
           </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <p>Visit our Facebook!: www.facebook.com/opsanta</p>
+        <p>Feel free to email us directly: apo.operationsanta.gmail.com</p>
       </div>
     </div>
   </div>
