@@ -131,27 +131,27 @@
 </section>
 
 <!-- Events Section -->
-<section id="event" class="event-section">
+<!-- <section id="event" class="event-section">
   <div class="container">
     <div class="row ">
       <h1><span class="red">Our</span><span class="green"> Events</span></h1>
     </div>
     <div class="row events">
-      <!-- event 1 -->
+      <!-- event 1 --
       <div class="col-lg-4">
         <h1>Rush Service</h1>
         <img src="/media/gift_tags.jpg" alt="" class="img-responsive">
         {% placeholder "rush service text" %}
       </div>
 
-      <!-- event 2 -->
+      <!-- event 2 --
       <div class="col-lg-4">
         <h1>Chipotle Fundraiser</h1>
         <img src="/media/chipotle.png" alt="" class="img-responsive">
         {% placeholder "chipotle desc text" %}
       </div>
 
-      <!-- event 3 -->
+      <!-- event 3 --
       <div class="col-lg-4">
         <h1>Gift-wrapping</h1>
         <img src="/media/gift_wrapping.jpg" alt="" class="img-responsive">
@@ -160,28 +160,36 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
   <div class="container">
     <div class="row">
-      <h1>Contact Section</h1>
-      <div class="col-lg-6">
+      <h1><span class="red">Contact</span> <span class="green">Us</span></h1>
+      <div class="col-lg-offset-2 col-lg-4">
         <div>
           <form method="POST" action="http://formspree.io/apo.operationsanta@gmail.com">
-            <div><input type="email" name="email" placeholder="Your email"></div>
-            <div><input type="phone" name="phone" placeholder="Your phone number"></div>
-            <div><textarea name="message" placeholder="Your message"></textarea></div>
+            <div><p>Name*</p><input type="name" name="name"></div>
+            <div><p>Email*</p><input type="email" name="email"></div>
+            <div><p>Phone*</p><input type="phone" name="phone"></div>
+            <div><p>Message*</p><textarea name="message"></textarea></div>
             <div><button type="submit">Send</button></div>
+            <!-- <a href="/donate" type="button" class="btn btn-outline-primary">Donate</a> -->
           </form>
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <!-- <div class="col-lg-4">
         <p>Visit our Facebook!: www.facebook.com/opsanta</p>
         <p>Feel free to email us directly: apo.operationsanta.gmail.com</p>
       </div>
+       -->
+      <!-- donate -->
+      <div class="col-lg-offset-2 col-lg-4 contact">
+        {% placeholder "contact text" %}
+      </div>
+
     </div>
   </div>
 </section>
