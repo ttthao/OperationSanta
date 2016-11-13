@@ -18,6 +18,10 @@ header {
     border-bottom: 1px solid #e1e1e4;
 }
 
+hr {
+    background-color: #FFF;
+}
+
 /*font color */
 .red {
   color: #8E0000;
